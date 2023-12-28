@@ -12,6 +12,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', 'Roboto', 'Ubuntu', sans-serif;
   /* transition: color 0.14s ease-in-out, background-color 0.15s ease-in-out; */
+  -webkit-tap-highlight-color: transparent;
 }
 body{
   position: relative;
