@@ -4,7 +4,7 @@ A simple web application to manage your tasks and to-do items.
 
 ## Live Preview
 
-You can try the To do list [here](). Follow the link to access the live version of the application.
+You can try the To do list [here](https://to-do-list-webapp-eight.vercel.app/). Follow the link to access the live version of the application.
 
 ## Technologies Used
 - **HTML**: Markup language for structuring the web page.
