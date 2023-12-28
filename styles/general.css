@@ -11,7 +11,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', 'Roboto', 'Ubuntu', sans-serif;
-  transition: color 5ms ease-in-out, background-color 5ms ease-in-out;
+  transition: color 0.16s ease-in-out, background-color 0.15s ease-in-out;
 }
 body{
   position: relative;
