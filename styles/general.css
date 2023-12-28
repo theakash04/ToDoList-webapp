@@ -25,7 +25,7 @@ body{
   background-position: top center;
   background-repeat: no-repeat;
   flex-direction: column;
-  transition: color 0.15s, background-color 0.15s;
+/*   transition: color 0.15s, background-color 0.15s; */
 }
 main{
   width: 100%;
