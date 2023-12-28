@@ -65,7 +65,7 @@ main{
   bottom: 0;
   border-radius: 10px;
   background-color: #F94C10;
-  animation: progress 2.9s linear ease-in;
+  animation: progress 2.9s linear;
 }
 
 @keyframes progress{
