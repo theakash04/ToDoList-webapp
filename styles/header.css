@@ -16,7 +16,6 @@ header .themechanger{
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.15s;
 }
 .themechanger i{
   font-size: 1.7rem;
@@ -36,7 +35,7 @@ header .themechanger{
   padding: 10px;
   border-radius: 50%; 
   cursor: pointer;
-  transition: all 0.15s;
+  transition: display 0.15s;
 }
 .info i{
   font-size: 1.5rem;
