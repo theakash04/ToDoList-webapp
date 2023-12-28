@@ -45,6 +45,7 @@
   content: '';
   background: url(../media/checked.png);
   background-size: contain;
+  border: none;
   filter: saturate(5);
 }
 .app div p span{
