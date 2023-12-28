@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+  --background-color: #000;
+  --text: #fff;
+  --text2: #606060;
+  --foreground: #2d2d2d;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', 'Ubuntu', sans-serif;
+  transition: color 20ms, background-color 0.15s;
+
+}
+body{
+  position: relative;
+  width: 100%;
+  background: url(../media/abc.jpg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  transition: color 0.15s, background-color 0.15s;
+}
+main{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  color: var(--text);
+  padding: 10px 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* alert boxes */
+.alert{
+  position: fixed;
+  display: none;
+  background-color: var(--foreground);
+  width: 80%;
+  border-radius: 5px;
+  bottom: 40px;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 0 5px var(--text2);
+}
+.alerttxt{
+  width: 100%;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.bar{
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #F94C10;
+  animation: progress 2.9s linear;
+}
+
+@keyframes progress{
+  0%{
+    width: 100%;
+  }
+}
+
+
+@media(min-width: 1200px){
+  main{
+    width: 40%;
+    min-height: 100%;
+    margin: 15px 0;
+    border-radius: 10px;
+  }
+  .alert{
+    width: 30%;
+    right: 10px;
+  }
+}

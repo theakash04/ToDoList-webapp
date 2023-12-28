@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO DO LIST</title>
+  <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/inputpage.css">
+  <link rel="stylesheet" href="styles/homePage.css">
+  <link rel="icon" href="media/list.png" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <!-- header section -->
+    <header>
+      <button class="themechanger">
+        <i class='bx bxs-moon'></i>
+      </button>
+      <div class="tittle">To do list</div>
+      <button class="info">
+        <i class='bx bx-info-circle'></i>
+      </button>
+    </header>
+    
+    <!-- info section -->
+    <div class="info-section">
+      <div class="infos">
+        <h3>What is this?</h3>
+        <ul>
+          <li>This is a <span>To Do List</span> webapp made by <a href="https://dexdevs.vercel.app">DEX</a></li>
+          <li>It stores the data in <span>User</span>Local storage</li>
+          <li>It was made using <span>HTML</span> <span>CSS</span> <span>JAVASCRIPT</span></li>
+        </ul>
+      </div>
+      <div class="infos">
+        <h3>How to use?</h3>
+        <ul>
+          <li>By using <span>pencil icon</span> you can create a new task</li>
+          <li>Write your task on the <span>popup</span> box and click on <span>Add</span> button</li>
+          <li>By clicking on the <span>Task</span> the task will be completed</li>
+        </ul>
+      </div>
+      <div class="devs">
+        <span>Thanks for using our WebApp</span>
+        <div>Developed by DEX</div>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <input type="text" placeholder="Enter Task" >
+      <button id="create" class="createbtn">
+        Add
+      </button>
+    </div>
+
+    <div class="app">
+      <div id="Tasks">
+        
+      </div>
+    </div>
+
+    <div class="alert">
+      <span class="alerttxt"></span>
+      <div class="bar"></div>
+    </div>
+  </main>  
+  <!-- scripts -->
+  <script src="scripts/header.js"></script>
+  <script src="scripts/App.js"></script>
+  <!-- <script src="scripts/app.js"></script> -->
+</body>
+</html>

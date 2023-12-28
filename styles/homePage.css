@@ -1,0 +1,104 @@
+.app{
+  width: 100%;
+  background-color: var(--background-color);
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+
+}
+.app div{
+  background-color: var(--background-color);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 5px;
+}
+.app div p{
+  position: relative;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background-color: var(--foreground);
+  padding: 10px;
+  font-family: 'Ubuntu';
+  color: var(--text);
+  font-weight: 400;
+  cursor: pointer;
+}
+.app div p::before{
+  content: '';
+  margin-right: 10px;
+  border: 1px solid var(--text2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.app div p.checked{
+  text-decoration: line-through;
+  color: var(--text2);
+}
+.app div p.checked::before{
+  content: '';
+  background: url(../media/checked.png);
+  background-size: contain;
+  filter: saturate(5);
+}
+.app div p span{
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 1.7rem;
+  color: var(--text);
+  border-radius: 10px;
+  line-height: 40px;
+  text-align: center;
+  transition: color 0.15s;
+}
+.app div p span:hover{
+  color: #F94C10;
+}
+
+.input-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--foreground);
+  width: 90%;
+  height: 50px;
+  border-radius: 50px;
+}
+.input-section input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 5px 10px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--foreground);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+}
+.createbtn{
+  position: relative;
+  background-color: #F94C10;
+  display: flex;
+  height: 100%;
+  width: 150px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+
