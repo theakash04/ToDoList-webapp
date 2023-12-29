@@ -1,22 +1,41 @@
 let input = document.querySelector(".input-section input");
 let addbtn = document.querySelector("#create");
 let TaskConatiner = document.querySelector("#Tasks");
-let alertBox = document.querySelector(".alert");
+let main = document.querySelector("main");
+
+
+
+
+const alertbox = (txt)=>{
+  const div1 = document.createElement('div');
+  div1.className = "alert";
+  main.appendChild(div1);
+
+  const span = document.createElement('span');
+  span.className = "alerttxt";
+  span.textContent = `${txt}`
+  div1.appendChild(span);
+
+  const div2 = document.createElement('div');
+  div2.className = "bar";
+  div1.appendChild(div2);
+  
+  //seting interval 
+  setInterval( () =>{
+    div1.remove();
+  }, 3100)
+}
+
+
+
+
 
 const addTask=()=>{
   let task = input.value;
   if(task === ""){
-    alertBox.children[0].innerText = "Please Enter some Text!";
-    alertBox.setAttribute('style', 'display: block');
-    setInterval(()=>{
-      alertBox.setAttribute('style', 'display: none');
-    }, 3100)
+    alertbox("Please Enter some Text!");
   }else if(task.length > 26){
-    alertBox.children[0].innerText = "please enter words <= 25";
-    alertBox.setAttribute('style', 'display: block');
-    setInterval(()=>{
-      alertBox.setAttribute('style', 'display: none');
-    }, 3100)
+    alertbox("please enter words <= 25");
     task = "";
   }else{
     let newTask = document.createElement('p');

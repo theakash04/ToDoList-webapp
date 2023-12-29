@@ -42,13 +42,12 @@ main{
 
 /* alert boxes */
 .alert{
-  position: fixed;
-  display: none;
+  position: absolute;
   background-color: var(--foreground);
   width: 80%;
   border-radius: 5px;
   bottom: 40px;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
   box-shadow: 0 0 5px var(--text2);
 }
