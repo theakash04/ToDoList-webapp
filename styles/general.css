@@ -46,7 +46,7 @@ main{
   background-color: var(--foreground);
   width: 80%;
   border-radius: 5px;
-  bottom: 40px;
+  bottom: 80px;
   padding: 15px 0;
   text-align: center;
   box-shadow: 0 0 5px var(--text2);
